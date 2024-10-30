@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+:root{
+    --color-dark: #000;
+    --color-light-black: #0f0f0f ;
+    --color-white: #fff;
+    --color-light: #ababab;
+    --color-green: #58a050;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif ;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.clock span{
+    color: var(--color-white);
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.clock span:not(:last-child)::after{
+    content: ':';
+    margin-bottom: 15px;
+    color: var(--color-white);
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.alarm-settings input[type="number"] {
+    appearance: none;           
+    width: 80px;
+    padding: 4px 0px;
+    margin: 0 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color:var(--color-light-black);
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;  
+    -moz-appearance:textfield;
+}
+
+.alarm-settings input[type="number"]::-webkit-outer-spin-button,
+.alarm-settings input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.alarm-settings input::-ms-clear,
+.alarm-settings input::-ms-reveal {
+    display: none;
+}
+
+.alarm-settings input[type="button"] {
+    width: 100px;
+    padding: 4px 0px;
+    margin: 0 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color:var(--color-green);
+    color: var(--color-white);
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer; 
+}
+
+.input-settings:hover {
+    border: 1px solid var(--color-green);
+    }
+
+.alarm-settings {
+    width: 100%;
+    text-align: center; 
+}
+
+@media screen and (max-width: 992px) {
+    .clock span{
+        font-size: 90px;
+    }
+
+    .clock span:not(:last-child)::after{
+        display: center;
+    }
+}
+
+
+
+

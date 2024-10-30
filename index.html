@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="autor" content="Douglas Santiago">
+        <meta name="descripition" content="Object Oriented JavaScript">
+        <meta name="key words" content="html, css, web, seo, web development">
+        <title> Alarm Clock </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <script src="./assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <section class="clock-display">
+                <div class="clock">
+                    <span id="hours">00</span>
+                    <span id="minutes">00</span>
+                </div>
+                <h2 class="alarm"><i class="fa-solid fa-bell"> </i> Alarm</h2>
+                <div class="alarm-settings">
+                    <input Type="number" class="input-settings" name="hour"  placeholder="HH" min="0" max="23" required>
+                    <input Type="number" class="input-settings" name="minute"  placeholder="MM" min="0" max="59" required>
+                    <input type="button" class="input-settings" value="Set alarm" >
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
